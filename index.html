@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC-Prática M14</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title fs-3 fw-bold">Winespot</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex"> 
+                    <!-- d-md-flex >> {propriedade}-{breakpoint}-{valor} -->
+                    <li class="nav-item fw-bold">
+                        <a href="#sobre-o-site" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre o site
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#historia" class="nav-link">
+                            <i class="bi bi-clock-history me-1"></i>
+                            História
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#nossos-vinhos" class="nav-link">
+                            <i class="bi bi-journal-text me-1"></i>
+                            Nossos vinhos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-o-site">    
+            <div id="vinhoCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./images/imagem-vinho1.jpg" class="d-block w-100" alt="Vinho 1">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/imagem-vinho2.jpg" class="d-block w-100" alt="Vinho 2">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/imagem-vinho3.jpg" class="d-block w-100" alt="Vinho 3">
+                    </div>
+                <!-- Adicione mais itens de carousel conforme necessário -->
+                </div>
+                <button class="carousel-control-prev" href="#vinhoCarousel" type="button" data-bs-target="#vinhoCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" href="#vinhoCarousel" type="button" data-bs-target="#vinhoCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#vinhoCarousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#vinhoCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#vinhoCarousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="images/imagem-vinho1.jpg" alt="Espaço interno" class="d-block w-100 rounded">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="fw-bold fs-4 text-colored">o site</span></h2>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. In reiciendis pariatur totam, facere labore perferendis voluptas fugit nesciunt iure, unde illo aperiam minima placeat ex voluptate tenetur alias odio ratione?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="historia" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">História <span class="fw-bold fs-4 text-colored">dos vinhos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/imagem-vinho1.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-archive-fill"></i>
+                            Origem
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum iure ipsa natus rerum harum, ullam odit? Dolor itaque qui nisi? Accusantium nobis maiores quod? Nobis recusandae officia mollitia illo?
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/imagem-vinho2.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-clock-fill"></i>
+                            Evolução
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum iure ipsa natus rerum harum, ullam odit? Dolor itaque qui nisi? Accusantium nobis maiores quod? Nobis recusandae officia mollitia illo?
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/imagem-vinho3.jpg" alt="" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-skip-backward-fill"></i>
+                            Viagem ao passado
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ipsum iure ipsa natus rerum harum, ullam odit? Dolor itaque qui nisi? Accusantium nobis maiores quod? Nobis recusandae officia mollitia illo?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="nossos-vinhos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Nossos <span class="fs-4 fw-bold text-colored">vinhos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-vinhos">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-tinto" class="text-start nav-link active">Vinho Tinto</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-branco" class="text-start nav-link">Vinho Branco</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-rose" class="text-start nav-link">Vinho Rosé</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#vinho-espumante" class="text-start nav-link">Vinho Espumante</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="vinho-tinto">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/imagem-vinho1.jpg" alt="Viña Las Perdices">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Viña Las Perdices</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/imagem-vinho1.jpg" alt="Casillero Del Diablo">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Casillero Del Diablo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/imagem-vinho1.jpg" alt="Catena Zapata">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Catena Zapata</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/imagem-vinho1.jpg" alt="Viña Las Perdices">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Viña Las Perdices</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/imagem-vinho1.jpg" alt="Casillero Del Diablo">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Casillero Del Diablo</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/imagem-vinho1.jpg" alt="Catena Zapata">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Catena Zapata</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="vinho-branco">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/branco2_640.jpg" alt="Posadas Viejas Branco">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Posadas Viejas Branco</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/branco1_640.jpg" alt="Patricius Tokaji Aszú 6 Puttonyos">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Patricius Tokaji Aszú 6 Puttonyos</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/branco2_640.jpg" alt="Herdade Grande Reserva">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Herdade Grande Reserva</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/branco1_640.jpg" alt="Tokaji Harslevelu Caravela">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Tokaji Harslevelu Caravela</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/branco2_640.jpg" alt="Quinta de Pinhaços Altitude">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Quinta de Pinhaços Altitude</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/branco1_640.jpg" alt="Português Pêra Manca">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Português Pêra Manca</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <div class="tab-pane" id="vinho-rose">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/rose_640.jpg" alt="Concha y Toro Reservado">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Concha y Toro Reservado Rosé</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/rose_640.jpg" alt="Vinho Mateus Rosé">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Vinho Mateus Rosé</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/rose_640.jpg" alt="Santa Helena Vinho Reservado Rose">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Santa Helena Vinho Reservado Rosé</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/rose_640.jpg" alt="Vinho Rose Verde Aveleda Casal Garcia">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Vinho Rose Verde Aveleda Casal Garcia</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/rose_640.jpg" alt="Concha y Toro Casillero Del Diablo Rosé">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Concha y Toro Casillero Del Diablo Rosé</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/rose_640.jpg" alt="Viña Las Perdices Chac Chac Rose Malbec">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Viña Las Perdices Chac Chac Rose Malbec</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="vinho-espumante">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/espumante_640.jpg" alt="Champagne Imperial Brut Moët">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Champagne Imperial Brut Moët</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/espumante_640.jpg" alt="Champagne Brut Veuve Clicquot">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Champagne Brut Veuve Clicquot</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/espumante_640.jpg" alt="Cava Cordon Negro Brut">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Cava Cordon Negro Brut</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/espumante_640.jpg" alt="Espumante Moskatel Casa Perini">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Espumante Moskatel Casa Perini</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/espumante_640.jpg" alt="Cava Cordon Negro Brut Freixenet">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Cava Cordon Negro Brut Freixenet</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/espumante_640.jpg" alt="Espumante Chandon Riche Demi-Sec">
+                                        <h5 class="section-title text-colored fw-bold mt-2">Espumante Chandon Riche Demi-Sec</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Entre <span class="text-colored fs-4 fw-bold">em contato</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                                <input type="text" id="nome" class="form-control" name="nome" placeholder="John Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail</label>
+                                <input type="email" id="email" class="form-control" name="email" placeholder="email@exemplo.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input type="tel" id="telefone" class="form-control" name="telefone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº145, bairro Bootstrap - São Paulo - SP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
